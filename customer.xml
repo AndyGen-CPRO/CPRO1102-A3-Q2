@@ -1,0 +1,22 @@
+<customer>
+    <dog>
+        <name>Jarnathan</name>
+        <owner>Bill Grant</owner>
+        <breed>Dachshund</breed>
+        <arrdate>April 02, 2024</arrdate>
+    </dog>
+
+    <dog>
+        <name>Sally</name>
+        <owner>Gillian Cruz</owner>
+        <breed>Siberian Husky</breed>
+        <arrdate>April 02, 2024</arrdate>
+    </dog>
+
+    <dog>
+        <name>Liam</name>
+        <owner>Anna Hathaway</owner>
+        <breed>Doberman</breed>
+        <arrdate>April 03, 2024</arrdate>
+    </dog>
+</customer>

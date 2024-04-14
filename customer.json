@@ -1,0 +1,20 @@
+{"dog": [
+    {
+        "name": "Bjorn",
+        "owner": "Theo Parker",
+        "breed": "American Bully",
+        "arrdate": "April 05, 2024"
+    },
+    {
+      "name": "Dottie",
+      "owner": "Krista Hunley",
+      "breed": "Poodle",
+      "arrdate": "April 07, 2024"
+    },
+    {
+      "name": "Max",
+      "owner": "Allan Dimagiba",
+      "breed": "Corgi",
+      "arrdate": "April 07, 2024"
+    }
+]}

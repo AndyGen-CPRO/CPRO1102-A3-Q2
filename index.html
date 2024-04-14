@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en-ca">
+    <head>
+        <title>Pawsome Dog Hotel Transaction Record</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <section class="style">
+            <h1>Pawsome Shop Dog Hotel Record (April)</h1>
+            <div id="customer"></div>
+            <footer> <h4>Pawsome &copy; 2024</h4></footer>
+        </section>
+
+        <script>
+            $(document).ready(function(){ 
+                $.get("customer.xml", function(data){   
+                    $("#customer").html("");
+                    $(data).find("customer").children().each(function() {
+                        var xmlDoc = $(this);
+                        $("#customer").append("Dog Name: " +
+                        xmlDoc.find("name").text() + "<br>Owner: " +
+                        xmlDoc.find("owner").text() + "<br>Breed: " +
+                        xmlDoc.find("breed").text() + "<br>Arrival Date: " +
+                        xmlDoc.find("arrdate").text() + "<br><p class='line'></p>");
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $.getJSON("customer.json", function(data){ $.each(data, function() {
+                    $.each(this, function (key, value) {
+                        $("#customer").append(
+                            "Dog Name: " + value.name + "<br>" + 
+                            "Owner: " + value.owner + "<br>" + 
+                            "Breed: " + value.breed + "<br>" +
+                            "Arrival Date: " + value.arrdate + "<br><p class='line'></p>");
+                        });
+                    }); 
+                });
+            });
+        </script>
+    </body>
+</html>

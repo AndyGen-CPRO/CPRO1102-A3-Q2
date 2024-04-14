@@ -1,0 +1,16 @@
+.style {
+    background-color: rgb(68, 68, 52);
+    color:rgb(245, 243, 204);
+    width:50%;
+    margin:auto;
+    padding: 30px;
+}
+
+.line {
+    border-bottom: 2px rgb(207, 205, 150) dashed;
+}
+
+body {
+    background-image: url("dog-bg.jpg");
+    background-color: #cccccc;
+}
